@@ -1,0 +1,82 @@
+{
+  "type_tag": "single_field_physical_properties",
+  "items": [
+    {
+      "field": "分子量",
+      "question_templates": [
+        "{name} 的分子量是多少？",
+        "请问 {name} 的分子量是多少？"
+      ],
+      "answer_templates": [
+        "{name} 的分子量是 {value}。",
+        "{name} 的分子量为 {value}。"
+      ]
+    },
+    {
+      "field": "熔点（℃）",
+      "question_templates": [
+        "{name} 的熔点是多少摄氏度？",
+        "请告诉我 {name} 的熔点温度。"
+      ],
+      "answer_templates": [
+        "{name} 的熔点是 {value} 摄氏度。",
+        "{name} 的熔点温度为 {value}。"
+      ]
+    },
+    {
+      "field": "沸点（℃）",
+      "question_templates": [
+        "{name} 的沸点是多少摄氏度？",
+        "请问 {name} 的沸点温度是多少？"
+      ],
+      "answer_templates": [
+        "{name} 的沸点是 {value} 摄氏度。",
+        "{name} 的沸点温度为 {value}。"
+      ]
+    },
+    {
+      "field": "相对密度（水＝1）",
+      "question_templates": [
+        "{name} 的相对密度（水＝1）是多少？",
+        "请告诉我 {name} 的相对密度（水＝1）。"
+      ],
+      "answer_templates": [
+        "{name} 的相对密度（水＝1）是 {value}。",
+        "{name} 的相对密度（水＝1）为 {value}。"
+      ]
+    },
+    {
+      "field": "相对密度（空气＝1）",
+      "question_templates": [
+        "{name} 的相对密度（空气＝1）是多少？",
+        "请问 {name} 的相对密度（空气＝1）是多少？"
+      ],
+      "answer_templates": [
+        "{name} 的相对密度（空气＝1）是 {value}。",
+        "{name} 的相对密度（空气＝1）为 {value}。"
+      ]
+    },
+    {
+      "field": "闪点（℃）",
+      "question_templates": [
+        "{name} 的闪点是多少摄氏度？",
+        "请告诉我 {name} 的闪点温度。"
+      ],
+      "answer_templates": [
+        "{name} 的闪点是 {value} 摄氏度。",
+        "{name} 的闪点温度为 {value}。"
+      ]
+    },
+    {
+      "field": "饱和蒸汽压（kPa）",
+      "question_templates": [
+        "{name} 的饱和蒸汽压是多少千帕？",
+        "请问 {name} 的饱和蒸汽压是多少？"
+      ],
+      "answer_templates": [
+        "{name} 的饱和蒸汽压是 {value} 千帕。",
+        "{name} 的饱和蒸汽压为 {value}。"
+      ]
+    }
+  ]
+}

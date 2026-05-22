@@ -1,0 +1,20 @@
+{
+  "type_tag": "single_field_firefighting_measures",
+  "items": [
+    {
+      "field": "消防措施",
+      "question_templates": [
+        "{name} 的消防措施有哪些？",
+        "请问 {name} 在火灾时应采取哪些灭火方法？",
+        "{name} 遇火灾时应如何进行消防处理？",
+        "能告诉我 {name} 的消防安全操作措施吗？"
+      ],
+      "answer_templates": [
+        "{name} 的消防措施是：{value}",
+        "{name} 遇火灾时，应采取以下消防措施：{value}",
+        "{name} 的灭火方法和防护要求包括：{value}",
+        "针对 {name}，消防措施如下：{value}"
+      ]
+    }
+  ]
+}

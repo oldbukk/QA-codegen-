@@ -1,0 +1,113 @@
+[
+  {
+    "name": "basic_identification",
+    "kind": "template",
+    "target_fields": [
+      "中文名",
+      "英文名",
+      "分子式",
+      "CAS号"
+    ],
+    "expected_per_row": 4,
+    "description": "基础识别信息查询，问化学品的中文名、英文名、分子式和CAS号，答对应字段值，满足基础事实查询需求。"
+  },
+  {
+    "name": "physical_properties",
+    "kind": "template",
+    "target_fields": [
+      "分子量",
+      "熔点（℃）",
+      "沸点（℃）",
+      "相对密度（水＝1）",
+      "相对密度（空气＝1）",
+      "闪点（℃）",
+      "饱和蒸汽压（kPa）"
+    ],
+    "expected_per_row": 7,
+    "description": "查询化学品的主要物理参数，包括分子量、熔点、沸点、相对密度、闪点和饱和蒸汽压，用于物理性质的快速了解。"
+  },
+  {
+    "name": "hazard_characteristics",
+    "kind": "template",
+    "target_fields": [
+      "危险特性",
+      "燃烧性",
+      "燃烧分解产物",
+      "聚合危害",
+      "稳定性",
+      "禁忌物"
+    ],
+    "expected_per_row": 6,
+    "description": "查询化学品的危险特性及相关信息，涵盖燃烧性、分解产物、聚合危害、稳定性和禁忌物，帮助理解安全风险。"
+  },
+  {
+    "name": "firefighting_measures",
+    "kind": "template",
+    "target_fields": [
+      "消防措施"
+    ],
+    "expected_per_row": 1,
+    "description": "针对化学品的消防措施进行提问，回答具体灭火方法和防护要求，支持应急安全操作。"
+  },
+  {
+    "name": "exposure_limits_and_toxicology",
+    "kind": "function",
+    "target_fields": [
+      "接触限值",
+      "毒理资料",
+      "侵入途径",
+      "健康危害"
+    ],
+    "expected_per_row": 3,
+    "description": "综合接触限值、毒理资料和侵入途径信息，生成关于安全暴露限度和健康危害的问答，适合安全防护和健康风险评估。"
+  },
+  {
+    "name": "protective_measures_reasoning",
+    "kind": "function",
+    "target_fields": [
+      "工程防护",
+      "呼吸系统防护",
+      "手防护",
+      "其他防护",
+      "身体防护"
+    ],
+    "expected_per_row": 4,
+    "description": "根据多种防护字段信息，推理和总结推荐的个人防护措施，支持防护装备选择和安全管理。"
+  },
+  {
+    "name": "emergency_response_scenarios",
+    "kind": "function",
+    "target_fields": [
+      "泄漏处理",
+      "急救措施",
+      "消防措施",
+      "危险特性"
+    ],
+    "expected_per_row": 3,
+    "description": "结合泄漏处理、急救和消防措施，生成化学品事故应急处理场景问答，帮助应对突发危险事件。"
+  },
+  {
+    "name": "multi_field_comparison",
+    "kind": "function",
+    "target_fields": [
+      "熔点（℃）",
+      "沸点（℃）",
+      "闪点（℃）",
+      "燃烧性"
+    ],
+    "expected_per_row": 2,
+    "description": "基于多个物理参数和燃烧性，进行化学品间的物理性质对比问答，支持安全性能和使用条件的比较分析。"
+  },
+  {
+    "name": "reverse_inference_by_hazard",
+    "kind": "function",
+    "target_fields": [
+      "危险特性",
+      "燃烧性",
+      "聚合危害",
+      "稳定性"
+    ],
+    "expected_per_row": 1,
+    "description": "根据给定的危险特性描述，推断可能的化学品特征或名称，适合反向推断和辅助识别。"
+  }
+]

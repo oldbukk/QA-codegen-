@@ -1,0 +1,49 @@
+{
+  "type_tag": "single_field_basic_identification",
+  "items": [
+    {
+      "field": "中文名",
+      "question_templates": [
+        "{name} 的中文名是什么？",
+        "请问 {name} 的中文名称是？"
+      ],
+      "answer_templates": [
+        "{name} 的中文名是 {value}。",
+        "{name} 的中文名称为 {value}。"
+      ]
+    },
+    {
+      "field": "英文名",
+      "question_templates": [
+        "{name} 的英文名是什么？",
+        "请告诉我 {name} 的英文名称。"
+      ],
+      "answer_templates": [
+        "{name} 的英文名是 {value}。",
+        "{name} 的英文名称为 {value}。"
+      ]
+    },
+    {
+      "field": "分子式",
+      "question_templates": [
+        "{name} 的分子式是什么？",
+        "请问 {name} 的分子式是多少？"
+      ],
+      "answer_templates": [
+        "{name} 的分子式是 {value}。",
+        "{name} 的分子式为 {value}。"
+      ]
+    },
+    {
+      "field": "CAS号",
+      "question_templates": [
+        "{name} 的 CAS 号是多少？",
+        "请告诉我 {name} 的 CAS 登记号。"
+      ],
+      "answer_templates": [
+        "{name} 的 CAS 号是 {value}。",
+        "{name} 的 CAS 登记号为 {value}。"
+      ]
+    }
+  ]
+}

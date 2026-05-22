@@ -1,0 +1,71 @@
+{
+  "type_tag": "single_field_hazard_characteristics",
+  "items": [
+    {
+      "field": "危险特性",
+      "question_templates": [
+        "{name} 的危险特性有哪些？",
+        "请介绍一下 {name} 的危险特性。"
+      ],
+      "answer_templates": [
+        "{name} 的危险特性是 {value}。",
+        "{name} 具有以下危险特性：{value}。"
+      ]
+    },
+    {
+      "field": "燃烧性",
+      "question_templates": [
+        "{name} 的燃烧性如何？",
+        "请问 {name} 是易燃物吗？"
+      ],
+      "answer_templates": [
+        "{name} 的燃烧性为 {value}。",
+        "{name} 被分类为 {value}。"
+      ]
+    },
+    {
+      "field": "燃烧分解产物",
+      "question_templates": [
+        "{name} 燃烧时会产生哪些分解产物？",
+        "请告诉我 {name} 的燃烧分解产物。"
+      ],
+      "answer_templates": [
+        "{name} 燃烧分解产物包括 {value}。",
+        "{name} 燃烧后会产生以下分解产物：{value}。"
+      ]
+    },
+    {
+      "field": "聚合危害",
+      "question_templates": [
+        "{name} 是否存在聚合危害？",
+        "请问 {name} 有聚合危害吗？"
+      ],
+      "answer_templates": [
+        "{name} 的聚合危害为 {value}。",
+        "{name} 在聚合方面的危害是 {value}。"
+      ]
+    },
+    {
+      "field": "稳定性",
+      "question_templates": [
+        "{name} 的稳定性如何？",
+        "请说明 {name} 的稳定性。"
+      ],
+      "answer_templates": [
+        "{name} 的稳定性为 {value}。",
+        "{name} 具有 {value} 的稳定性。"
+      ]
+    },
+    {
+      "field": "禁忌物",
+      "question_templates": [
+        "{name} 禁忌接触哪些物质？",
+        "请告诉我 {name} 的禁忌物有哪些。"
+      ],
+      "answer_templates": [
+        "{name} 禁忌物包括 {value}。",
+        "{name} 不宜接触以下物质：{value}。"
+      ]
+    }
+  ]
+}
