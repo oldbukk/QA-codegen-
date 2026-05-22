@@ -650,22 +650,3 @@ python src/codegen_sandbox.py
 
 ---
 
-## 十二、安全和提交说明
-
-建议不要提交以下内容：
-
-```text
-runs/
-__pycache__/
-.env
-data/*.csv
-```
-
-本仓库的 `.gitignore` 已经默认忽略这些路径。`runs/` 里包含运行缓存、LLM 对话日志和测试输出，通常不应该进 git。
-
-API key 使用建议：
-
-- 优先放在环境变量 `OPENAI_API_KEY`。
-- 不要写进 README。
-- 不要写进请求样例文件后提交。
-- 如果 key 曾经暴露在聊天或日志里，建议在服务商后台轮换。
