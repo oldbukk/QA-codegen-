@@ -532,17 +532,7 @@ export OPENAI_API_KEY=sk-你的key
 python src/api_server.py
 ```
 
-### 2. 代理接口报错或连不上
-
-确认 `OPENAI_BASE_URL` 带 `/v1`：
-
-```bash
-export OPENAI_BASE_URL=https://api.openai-proxy.org/v1
-```
-
-也可以在 API 请求的 `config.base_url` 里传。
-
-### 3. 任务一直在 `plan` 或 `codegen`
+### 2. 任务一直在 `plan` 或 `codegen`
 
 这是正常现象。`plan` 和 `codegen` 阶段会真实调用 LLM，尤其是第一次没有缓存时会较慢。
 
@@ -559,7 +549,7 @@ export OPENAI_BASE_URL=https://api.openai-proxy.org/v1
 }
 ```
 
-### 4. 任务失败，怎么排查
+### 3. 任务失败，怎么排查
 
 先看任务状态：
 
@@ -580,7 +570,7 @@ ls runs/{job_id}/codegen_logs/
 - `codegen_logs/*.json`
 - `<out-prefix>.stats.json`
 
-### 5. 为什么输出数量比预期少
+### 4. 为什么输出数量比预期少
 
 常见原因：
 
@@ -590,7 +580,7 @@ ls runs/{job_id}/codegen_logs/
 - 只设置了 `max_rows`，没有跑全量。
 - 使用了 `strategies_override`，只跑了部分策略。
 
-### 6. 如何减少费用和时间
+### 5. 如何减少费用和时间
 
 测试阶段：
 
@@ -649,4 +639,3 @@ python src/codegen_sandbox.py
 ```
 
 ---
-
